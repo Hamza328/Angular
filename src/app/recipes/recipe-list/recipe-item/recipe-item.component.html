@@ -1,0 +1,20 @@
+<div class="card" style="width: 18rem"
+ [routerLink]=[index]
+ >
+  <div class="card-body card-group" routerLinkActive="active">
+    <div class="mr-auto">
+      <h5 class="card-title h4 font-weight-bold font-italic">{{ recipe.name }}</h5>
+      <p class="card-text font-italic h5">{{ recipe.description }}</p>
+    </div>
+    <span class="ml-auto">
+      <img
+        class="rounded-circle"
+        [src]="recipe.imagePath"
+        alt="{{ recipe.name }}"
+        style="max-height: 80px ;"
+      />
+    </span>
+
+    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+  </div>
+</div>
